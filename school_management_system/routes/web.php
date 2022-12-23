@@ -18,3 +18,4 @@ use App\Http\Controllers\Webcontroller;
 //    return view('welcome');
 //});
 Route::get('/',[Webcontroller::class,'index'])->name('home');
+Route::get('course-detail',[Webcontroller::class,'detail'])->name('course-detail');

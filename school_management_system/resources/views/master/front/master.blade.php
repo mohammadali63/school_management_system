@@ -5,23 +5,25 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>@yield('title')</title>
     <link rel="stylesheet" href="{{asset('/')}}css/bootstrap.css"/>
     <link rel="stylesheet" href="{{asset('/')}}css/all.css"/>
     <link rel="stylesheet" href="{{asset('/')}}css/style.css"/>
 </head>
 <body>
+{{--------------------------------------------Header Section----------------------------------------------------}}
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top shadow">
         <div class="container">
             <a href="" class="navbar-brand">Logo</a>
             <ul class="navbar-nav">
-                <li><a href="" class="navbar-brand">Home</a></li>
+                <li><a href="{{route('home')}}" class="navbar-brand">Home</a></li>
                 <li><a href="" class="navbar-brand">All Course</a></li>
                 <li><a href="" class="navbar-brand">Login</a></li>
                 <li><a href="" class="navbar-brand">Registraition</a></li>
             </ul>
         </div>
     </nav>
+{{------------------------------------------- End Header Section-------------------------------------------------------------------------------}}
     @yield('body')
 
 {{--    ----------------------------------   Footer Section --------------------------------------}}
@@ -56,8 +58,9 @@
                         <h3>Fllow Us On</h3>
                         <hr/>
                         <ul class="nav">
-                            <li><a href="" class="nav-link"><i class="fa-brands fa-facebook"></i></a></li>
-                            <li><a href="" class="nav-link"><i class="fa-brands fa-twitter"></i></a></li>
+{{--                            <li><a href="" class="nav-link"><i class="fa-brands fa-facebook"></i></a></li>--}}
+{{--                            <li><a href="" class="nav-link"><i class="fa-brands fa-twitter"></i></a></li>--}}
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur debitis deserunt iusto nihil reiciendis. Accusamus, accusantium, amet at corporis distinctio dolores exercitationem nisi quaerat reiciendis repellat rerum tempora unde voluptate.</p>
                         </ul>
                     </div>
                 </div>
@@ -70,6 +73,8 @@
             </div>
         </div>
     </footer>
+
+{{--    ----------------------------------------End footer Section---------------------------------------------}}
 
 
 

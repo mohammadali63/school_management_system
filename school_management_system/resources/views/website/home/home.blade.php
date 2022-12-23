@@ -1,6 +1,7 @@
 @extends('master.front.master')
 
-@section('')
+@section('title')
+    Home
 @endsection
 @section('body')
     <div class="carousel" data-bs-ride="carousel" data-bs-interval="2000">
@@ -30,7 +31,7 @@
     </div>
 
 
-
+{{---------------------------------Course Card--------------------------------------------}}
     <section class="py-5">
         <div class="container">
             <div class="row">
@@ -58,7 +59,7 @@
                                         <li>Course Feature Five</li>
                                     </ul>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    <a href="" class="btn btn-outline-success">Read More</a>
+                                    <a href="{{route('course-detail')}}" class="btn btn-outline-success">Read More</a>
                                     <a href="" class="btn btn-outline-info float-end">Apply Now</a>
                                 </div>
                             </div>
@@ -90,7 +91,7 @@
                                         <li>Course Feature Five</li>
                                     </ul>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-{{--                                    <a href="{{route('course-detail')}}" class="btn btn-outline-success">Read More</a>--}}
+                                    <a href="{{route('course-detail')}}" class="btn btn-outline-success">Read More</a>
                                     <a href="" class="btn btn-outline-info float-end">Apply Now</a>
                                 </div>
                             </div>
@@ -122,7 +123,7 @@
                                         <li>Course Feature Five</li>
                                     </ul>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    <a href="" class="btn btn-outline-success">Read More</a>
+                                    <a href="{{route('course-detail')}}" class="btn btn-outline-success">Read More</a>
                                     <a href="" class="btn btn-outline-info float-end">Apply Now</a>
                                 </div>
                             </div>
@@ -154,7 +155,7 @@
                                         <li>Course Feature Five</li>
                                     </ul>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    <a href="" class="btn btn-outline-success">Read More</a>
+                                    <a href="{{route('course-detail')}}" class="btn btn-outline-success">Read More</a>
                                     <a href="" class="btn btn-outline-info float-end">Apply Now</a>
                                 </div>
                             </div>
@@ -162,11 +163,12 @@
                     </div>
                 </div>
 
-
             </div>
         </div>
     </section>
+{{--    -------------------------------End Course Card--------------------------------------------}}
 
+{{---------------------------------------------Subscribe Section----------------------------------------------------}}
     <section class="py-5 bg-secondary">
         <div class="container">
             <div class="row">
@@ -174,7 +176,7 @@
                     <div class="card card-body">
                         <div class="row">
                             <div class="col-9">
-                                <input type="text" placeholder="Enter your email...." class="form-control"/>
+                                <input type="text" placeholder="Enter your email heare................." class="form-control"/>
                             </div>
                             <div class="col-3">
                                 <input type="submit" class="btn btn-outline-success w-100" value="subscribe now"/>
@@ -185,4 +187,5 @@
             </div>
         </div>
     </section>
+{{--    -------------------------------------------End Subscribe Section----------------------------------------------------}}
 @endsection
