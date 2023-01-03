@@ -6,11 +6,17 @@
             <div class="row">
                 <div class="col-md-8 mx-auto">
                     <div class="card">
-                        <div class="card-header">Login Form</div>
+                        <div class="card-header">Register Form</div>
                         <div class="card-body">
                             <form action="" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <div class="row">
+                                    <label class="col-md-3">Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="name">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
                                     <label class="col-md-3">Email Address</label>
                                     <div class="col-md-9">
                                         <input type="email" class="form-control" name="email">
@@ -25,7 +31,7 @@
                                 <div class="row">
                                     <label class="col-md-3"></label>
                                     <div class="col-md-9">
-                                        <input type="submit" class="btn btn-outline-success" value="Login">
+                                        <input type="submit" class="btn btn-outline-success" value="Register Now">
                                     </div>
                                 </div>
                             </form>
