@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Webcontroller;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +19,6 @@ use App\Http\Controllers\Webcontroller;
 //    return view('welcome');
 //});
 Route::get('/',[Webcontroller::class,'index'])->name('home');
-Route::get('course-detail',[Webcontroller::class,'detail'])->name('course-detail');
+Route::get('/course-detail',[Webcontroller::class,'detail'])->name('course-detail');
+Route::get('/user-login',[AuthController::class,'login'])->name('user-login');
+Route::get('/user-register',[AuthController::class,'register'])->name('user-register');

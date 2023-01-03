@@ -4,31 +4,37 @@
     Home
 @endsection
 @section('body')
-    <div class="carousel" data-bs-ride="carousel" data-bs-interval="2000">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="card card-body">
-                    <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis dignissimos earum error ex explicabo officiis quaerat temporibus voluptas! Aliquam blanditiis, ducimus earum explicabo impedit molestiae pariatur repellat temporibus veniam!</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis dignissimos earum error ex explicabo officiis quaerat temporibus voluptas! Aliquam blanditiis, ducimus earum explicabo impedit molestiae pariatur repellat temporibus veniam!</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="card card-body">
-                    <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis dignissimos earum error ex explicabo officiis quaerat temporibus voluptas! Aliquam blanditiis, ducimus earum explicabo impedit molestiae pariatur repellat temporibus veniam!</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis dignissimos earum error ex explicabo officiis quaerat temporibus voluptas! Aliquam blanditiis, ducimus earum explicabo impedit molestiae pariatur repellat temporibus veniam!</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="card card-body">
-                    <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis dignissimos earum error ex explicabo officiis quaerat temporibus voluptas! Aliquam blanditiis, ducimus earum explicabo impedit molestiae pariatur repellat temporibus veniam!</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis dignissimos earum error ex explicabo officiis quaerat temporibus voluptas! Aliquam blanditiis, ducimus earum explicabo impedit molestiae pariatur repellat temporibus veniam!</p>
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="carousel" data-bs-ride="carousel" data-bs-interval="2000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card card-body">
+                                <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis dignissimos earum error ex explicabo officiis quaerat temporibus voluptas! Aliquam blanditiis, ducimus earum explicabo impedit molestiae pariatur repellat temporibus veniam!</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis dignissimos earum error ex explicabo officiis quaerat temporibus voluptas! Aliquam blanditiis, ducimus earum explicabo impedit molestiae pariatur repellat temporibus veniam!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card card-body">
+                                <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis dignissimos earum error ex explicabo officiis quaerat temporibus voluptas! Aliquam blanditiis, ducimus earum explicabo impedit molestiae pariatur repellat temporibus veniam!</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis dignissimos earum error ex explicabo officiis quaerat temporibus voluptas! Aliquam blanditiis, ducimus earum explicabo impedit molestiae pariatur repellat temporibus veniam!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card card-body">
+                                <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis dignissimos earum error ex explicabo officiis quaerat temporibus voluptas! Aliquam blanditiis, ducimus earum explicabo impedit molestiae pariatur repellat temporibus veniam!</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis dignissimos earum error ex explicabo officiis quaerat temporibus voluptas! Aliquam blanditiis, ducimus earum explicabo impedit molestiae pariatur repellat temporibus veniam!</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
 {{---------------------------------Course Card--------------------------------------------}}
