@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Webcontroller;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,12 +25,8 @@ Route::get('/course-detail',[Webcontroller::class,'detail'])->name('course-detai
 Route::get('/user-login',[AuthController::class,'login'])->name('user-login');
 Route::get('/user-register',[AuthController::class,'register'])->name('user-register');
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
+    Route::get('/dashboard',[DashboardController::class,'index'])->name('home');
+    Route::get('/add-user',[UserController::class,'index'])->name('user');
+    Route::get('/manage-user',[UserController::class,'manage'])->name('manage.user');
 });

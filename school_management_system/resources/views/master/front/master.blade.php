@@ -18,8 +18,8 @@
             <ul class="navbar-nav">
                 <li><a href="{{route('home')}}" class="navbar-brand">Home</a></li>
                 <li><a href="" class="navbar-brand">All Course</a></li>
-                <li><a href="{{route('user-login')}}" class="navbar-brand">Login</a></li>
-                <li><a href="{{route('user-register')}}" class="navbar-brand">Registraition</a></li>
+                <li><a href="http://localhost/school_management_system/school_management_system/public/login" class="navbar-brand">Login</a></li>
+                <li><a href="http://localhost/school_management_system/school_management_system/public/register" class="navbar-brand">Registraition</a></li>
             </ul>
         </div>
     </nav>
