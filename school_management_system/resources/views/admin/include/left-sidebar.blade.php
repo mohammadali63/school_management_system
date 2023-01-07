@@ -14,7 +14,7 @@
                 <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-widgets" type="button"><i class="bi bi-briefcase-fill"></i></button>
             </li>
             <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Course Module">
-                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-ecommerce" type="button"><i class="bi bi-bag-check-fill"></i></button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-ecommerce" type="button"><i class="bi bi-book"></i></button>
             </li>
             <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Student Module">
                 <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-ecommerce" type="button"><i class="bi bi-bag-check-fill"></i></button>
@@ -50,7 +50,7 @@
                         </div>
                         <small class="mb-0">Some placeholder content</small>
                     </div>
-                    <a href="app-emailbox.html" class="list-group-item"><i class="bi bi-person-plus"></i>Add User</a>
+                    <a href="{{route('user')}}" class="list-group-item"><i class="bi bi-person-plus"></i>Add User</a>
                     <a href="app-chat-box.html" class="list-group-item"><i class="bi bi-pencil"></i>Manage User</a>
                 </div>
             </div>
