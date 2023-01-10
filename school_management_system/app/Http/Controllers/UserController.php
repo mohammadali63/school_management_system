@@ -14,12 +14,7 @@ class UserController extends Controller
     }
     public function Create(Request $request)
     {
-        $this->user = new User();
-        $this->user->name = $request->name;
-        $this->user->email = $request->email;
-        $this->user->password = bcrypt($request->password);
-        $this->user->save();
-
+        User::newUsers($request);
         return redirect('/add-user')->with('massage','Your Info Save Successfully');
     }
     public function manage()
