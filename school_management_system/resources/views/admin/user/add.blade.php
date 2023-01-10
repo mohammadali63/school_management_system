@@ -11,7 +11,8 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="card-title d-flex align-items-center">
-                            <h5 class="mb-0 text-center">Add User Form</h5>
+                            <h3 class="mb-0 text-center">Add User Form</h3>
+                            <p class="text-center text-success">{{Session::get('massage')}}</p>
                         </div>
                         <form action="{{route('new-user')}}"  method="post">
                             @csrf
