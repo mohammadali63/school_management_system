@@ -51,7 +51,7 @@
                         <small class="mb-0">Some placeholder content</small>
                     </div>
                     <a href="{{route('user')}}" class="list-group-item"><i class="bi bi-person-plus"></i>Add User</a>
-                    <a href="app-chat-box.html" class="list-group-item"><i class="bi bi-pencil"></i>Manage User</a>
+                    <a href="{{route('manage.user')}}" class="list-group-item"><i class="bi bi-pencil"></i>Manage User</a>
                 </div>
             </div>
             <div class="tab-pane fade" id="pills-widgets">

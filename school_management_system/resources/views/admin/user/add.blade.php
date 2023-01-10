@@ -4,18 +4,18 @@
 @endsection
 
 @section('content')
+    <main class="page-content">
         <div class="row">
             <div class="col-xl-9 mx-auto">
                 <hr/>
                 <div class="card">
                     <div class="card-body">
-                        <form action="" id="catForm" method="post">
+                        <div class="card-title d-flex align-items-center">
+                            <h5 class="mb-0 text-center">Add User Form</h5>
+                        </div>
+                        <form action="{{route('new-user')}}"  method="post">
                             @csrf
                             <div class="border p-4 rounded">
-                                <div class="card-title d-flex align-items-center">
-                                    <h5 class="mb-0 text-center">Add User Form</h5>
-                                </div>
-                                <hr/>
                                 <div class="row mb-3">
                                     <label for="inputEnterYourName" class="col-sm-3 col-form-label">Full Name</label>
                                     <div class="col-sm-9">
@@ -47,6 +47,7 @@
                 </div>
             </div>
         </div>
+    </main>
 
 
 @endsection
