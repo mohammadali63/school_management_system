@@ -64,8 +64,8 @@
                         </div>
                         <small class="mb-0">Some placeholder content</small>
                     </div>
-                    <a href="widgets-static-widgets.html" class="list-group-item"><i class="bi bi-person-plus"></i>Add Teacher</a>
-                    <a href="widgets-data-widgets.html" class="list-group-item"><i class="bi bi-pencil"></i>Manage Teacher</a>
+                    <a href="{{route('add-teacher')}}" class="list-group-item"><i class="bi bi-person-plus"></i>Add Teacher</a>
+                    <a href="{{route('manage-teacher')}}" class="list-group-item"><i class="bi bi-pencil"></i>Manage Teacher</a>
                 </div>
             </div>
             <div class="tab-pane fade" id="pills-ecommerce">

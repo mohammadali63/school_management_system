@@ -5,6 +5,7 @@ use App\Http\Controllers\Webcontroller;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\TeacherController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,11 @@ Route::get('/user-register',[AuthController::class,'register'])->name('user-regi
 
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
     Route::get('/dashboard',[DashboardController::class,'index'])->name('home');
+    Route::get('/add/teacher',[TeacherController::class,'index'])->name('add-teacher');
+    Route::post('/addnew/teacher',[TeacherController::class,'CreateTeacher'])->name('new-teacher');
+    Route::get('/manage/teacher',[TeacherController::class,'manageTeacher'])->name('manage-teacher');
+
+
     Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified','SuperAdmin'])->group(function (){
         Route::get('/add-user',[UserController::class,'index'])->name('user');
         Route::post('/new/user',[UserController::class,'Create'])->name('new-user');
