@@ -30,4 +30,7 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
     Route::get('/add-user',[UserController::class,'index'])->name('user');
     Route::post('/new/user',[UserController::class,'Create'])->name('new-user');
     Route::get('/manage-user',[UserController::class,'manage'])->name('manage.user');
+    Route::get('/edit/user/{id}',[UserController::class,'Edit'])->name('edit-user');
+    Route::post('/update/user/{id}',[UserController::class,'Update'])->name('update-user');
+    Route::get('/delete/user/{id}',[UserController::class,'Delete'])->name('delete-user');
 });

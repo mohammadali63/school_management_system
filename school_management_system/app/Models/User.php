@@ -68,4 +68,15 @@ class User extends Authenticatable
         self::$user->password = bcrypt($request->password);
         self::$user->save();
     }
+    public static function updateUser($request,$id)
+    {
+        self::$user = User::find($id);
+        self::$user->name = $request->name;
+        self::$user->email = $request->email;
+        if (isset($request->password))
+        {
+            self::$user->password = bcrypt($request->password);
+        }
+        self::$user->save();
+    }
 }

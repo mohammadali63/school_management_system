@@ -19,7 +19,23 @@ class UserController extends Controller
     }
     public function manage()
     {
-        return view('admin.user.manage');
+        return view('admin.user.manage',[
+            'users' => User::all()
+        ]);
+    }
+    public function Edit($id)
+    {
+        $this->user = User::find($id);
+        return view('admin.user.edit',['user'=> $this->user]);
+    }
+    public function Update(Request $request, $id)
+    {
+        User::updateUser($request,$id);
+        return redirect('/manage-user')->with('massage','Your Info Update Successfully');
+    }
+    public function Delete($id)
+    {
+        return $id;
     }
 
 }
