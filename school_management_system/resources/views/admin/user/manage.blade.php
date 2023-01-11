@@ -30,9 +30,12 @@
                                 <td>{{$user->email}}</td>
                                 <td>
                                     <div class="table-actions d-flex align-items-center gap-3 fs-6">
-                                        <a href="#" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="publish"><i class="bi bi-eye-fill"></i></a>
-                                        <a href="{{route('edit-user',['id'=>$user->id])}}" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"><i class="bi bi-pencil-fill"></i></a>
-                                        <a href="{{route('delete-user',['id'=>$user->id])}}" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="bi bi-trash-fill"></i></a>
+                                        <a href="#" class="btn btn-warning " >
+                                            <i class="bi bi-eye-fill"></i></a>
+                                        <a href="{{route('edit-user',['id'=>$user->id])}}" class="btn btn-warning " >
+                                            <i class="bi bi-pencil-fill"></i></a>
+                                        <a href="{{route('delete-user',['id'=>$user->id])}}" class="btn btn-danger {{$user->id == 1 ? 'disabled' : ''}}" >
+                                            <i class="bi bi-trash-fill"></i></a>
                                     </div>
                                 </td>
                             </tr>

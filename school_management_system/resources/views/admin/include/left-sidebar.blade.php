@@ -43,6 +43,7 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="pills-application">
+                @if(Auth::user()->id == 1)
                 <div class="list-group list-group-flush">
                     <div class="list-group-item">
                         <div class="d-flex w-100 justify-content-between">
@@ -53,6 +54,7 @@
                     <a href="{{route('user')}}" class="list-group-item"><i class="bi bi-person-plus"></i>Add User</a>
                     <a href="{{route('manage.user')}}" class="list-group-item"><i class="bi bi-pencil"></i>Manage User</a>
                 </div>
+                @endif
             </div>
             <div class="tab-pane fade" id="pills-widgets">
                 <div class="list-group list-group-flush">
