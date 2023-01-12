@@ -34,6 +34,31 @@ class TeacherController extends Controller
 
     public function manageTeacher()
     {
-        return view('admin.teacher.manage');
+//        $this->teacher = Teacher::all();
+//        $this->teacher = Teacher::orderBy('id', 'desc')->take(2)->get();
+//        $this->teacher = Teacher::orderBy('id', 'desc')->skip(1)->take(2)->get();
+        $this->teacher = Teacher::orderBy('id', 'desc')->get();
+//        return $this->teacher;
+        return view('admin.teacher.manage',[
+            'teachers' => $this->teacher,
+        ]);
     }
+    public function editTeacher($id)
+    {
+        $this->teacher = Teacher::find($id);
+        return view('admin.teacher.edit',[
+            'teacher'=>$this->teacher
+        ]);
+
+    }
+    public function updatrTeacher(Request $request, $id)
+    {
+       Teacher::UpdateTeacher($request,$id);
+        return redirect('/manage/teacher')->with('massage','Teacher Info Update Successfully');
+    }
+    public function deleteTeacher($id)
+    {
+
+    }
+
 }
