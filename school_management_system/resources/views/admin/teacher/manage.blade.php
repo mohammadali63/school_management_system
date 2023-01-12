@@ -7,6 +7,7 @@
                 <div class="card-body">
                     <div class="d-flex align-items-center">
                         <h5 class="mb-0 text-center">Manage Teacher Form</h5>
+                        <p class="text-center text-success">{{Session::get('massage')}}</p>
                         <form class="ms-auto position-relative">
                             <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i class="bi bi-search"></i></div>
                             <input class="form-control ps-5" type="text" placeholder="search">

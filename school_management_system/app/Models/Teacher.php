@@ -31,7 +31,7 @@ class Teacher extends Model
         self::$teacher->image = self::getImageUrl($request);
         self::$teacher->save();
     }
-    public static function UpdateTeacher($request,$id)
+    public static function UpdateTeacher($request,$id,$code)
     {
         self::$teacher = Teacher::find($id);
         if ($request->file('image'))
@@ -47,6 +47,7 @@ class Teacher extends Model
             self::$imageUrl = self::$teacher->image;
         }
         self::$teacher->name = $request->name;
+        self::$teacher->code = $code;
         self::$teacher->email = $request->email;
         self::$teacher->mobile = $request->mobile;
         self::$teacher->address = $request->address;

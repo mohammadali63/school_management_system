@@ -15,6 +15,11 @@ class TeacherController extends Controller
 
     public function CreateTeacher(Request $request)
     {
+        Teacher::newTeacher($request, $this->getTeacherCode($request));
+        return redirect('/add/teacher')->with('massage','Teacher Info Save Successfully');
+    }
+    public function getTeacherCode($request)
+    {
         $this->teacher = Teacher::orderBy('id', 'desc')->first();
         if ($this->teacher)
         {
@@ -28,8 +33,7 @@ class TeacherController extends Controller
         $this->name = strtoupper(substr($this->updateString, 0,3));
         $this->year = date('Y');
         $this->code = $this->name.$this->year.$this->id;
-        Teacher::newTeacher($request, $this->code);
-        return redirect('/add/teacher')->with('massage','Teacher Info Save Successfully');
+        return $this->code;
     }
 
     public function manageTeacher()
@@ -53,12 +57,18 @@ class TeacherController extends Controller
     }
     public function updatrTeacher(Request $request, $id)
     {
-       Teacher::UpdateTeacher($request,$id);
+       Teacher::UpdateTeacher($request,$id, $this->getTeacherCode($request));
         return redirect('/manage/teacher')->with('massage','Teacher Info Update Successfully');
     }
     public function deleteTeacher($id)
     {
-
+        $this->teacher = Teacher::find($id);
+        if (file_exists($this->teacher->image))
+        {
+            unlink($this->teacher->image);
+        }
+        $this->teacher->delete();
+        return redirect('/manage/teacher')->with('massage','Teacher Info Delete Successfully');
     }
 
 }
