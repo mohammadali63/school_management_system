@@ -49,7 +49,7 @@
                                                 <i class="bi bi-eye-slash"></i></a>
                                             <a href="{{route('edit-teacher',['id'=>$teacher->id])}}" class="btn btn-warning " >
                                                 <i class="bi bi-pencil-fill"></i></a>
-                                            <a href="{{route('delete-teacher',['id'=>$teacher->id])}}" class="btn btn-danger" >
+                                            <a href="{{route('delete-teacher',['id'=>$teacher->id])}}" onclick=" return confirm ('are you Sure Delete This')" class="btn btn-danger" >
                                                 <i class="bi bi-trash-fill"></i></a>
                                         </div>
                                     </td>

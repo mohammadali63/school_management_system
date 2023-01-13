@@ -35,7 +35,9 @@ class UserController extends Controller
     }
     public function Delete($id)
     {
-        return $id;
+        $this->user = User::find($id);
+        $this->user->delete();
+        return back();
     }
 
 }

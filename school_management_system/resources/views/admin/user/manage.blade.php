@@ -34,7 +34,7 @@
                                             <i class="bi bi-eye-fill"></i></a>
                                         <a href="{{route('edit-user',['id'=>$user->id])}}" class="btn btn-warning " >
                                             <i class="bi bi-pencil-fill"></i></a>
-                                        <a href="{{route('delete-user',['id'=>$user->id])}}" class="btn btn-danger {{$user->id == 1 ? 'disabled' : ''}}" >
+                                        <a href="{{route('delete-user',['id'=>$user->id])}}" onclick="return confirm('Are you Sure Delete This Info')" class="btn btn-danger {{$user->id == 1 ? 'disabled' : ''}}" >
                                             <i class="bi bi-trash-fill"></i></a>
                                     </div>
                                 </td>
