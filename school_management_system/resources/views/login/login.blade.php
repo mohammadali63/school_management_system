@@ -102,6 +102,14 @@
                                                         <input type="password" name="password" class="form-control radius-30 ps-5" id="inputChoosePassword" placeholder="Enter Password">
                                                     </div>
                                                 </div>
+                                                <div class="col-12">
+                                                    <label for="inputChoosePassword" class="form-label">Login As</label>
+                                                    <div class="ms-auto position-relative">
+                                                        <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i class="bi bi-lock-fill"></i></div>
+                                                        <label><input type="radio" name="check" value="1"/>Teacher</label>
+                                                        <label><input type="radio" name="check" value="2"/>Student</label>
+                                                    </div>
+                                                </div>
                                                 <div class="col-6">
                                                     <div class="form-check form-switch">
                                                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="">
